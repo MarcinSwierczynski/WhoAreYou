@@ -8,5 +8,9 @@
 	<string>YOUR-SECRET-KEY</string>
 	<key>s3Bucket</key>
 	<string>YOUR-BUCKET-NAME</string>
+    <key>faceKey</key>
+    <string>YOUR-FACE.COM-KEY</string>
+    <key>faceSecret</key>
+    <string>YOUR-FACE.COM-SECRET</string>
 </dict>
 </plist>
