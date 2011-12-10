@@ -8,12 +8,16 @@
 #import <Foundation/Foundation.h>
 
 @class S3Repository;
+@class FaceRepository;
 
 
 @interface RepositoryManager : NSObject {
 	S3Repository *s3Repository;
+	FaceRepository *faceRepository;
 }
 @property(nonatomic, retain) S3Repository *s3Repository;
+@property(nonatomic, retain) FaceRepository *faceRepository;
+
 
 + (RepositoryManager *)repository;
 

@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "RepositoryManager.h"
 #import "S3Repository.h"
+#import "FaceRepository.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -80,10 +81,17 @@
 	NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"image" ofType:@"jpg"];
 	[[RepositoryManager repository].s3Repository setDelegate:self];
 	[[RepositoryManager repository].s3Repository uploadFile:sourcePath to:@"image.jpg"];
+
+	[[RepositoryManager repository].faceRepository setDelegate:self];
+	[[RepositoryManager repository].faceRepository recognizeFacesIn:@"http://whoareyou.s3.amazonaws.com/image.jpg"];
 }
 
 - (void)fileUploadFinished:(NSString *)response {
 	NSLog(@"Upload successful! Response: '%@'", response);
+}
+
+- (void)faceDetected:(NSString *)response {
+	NSLog(@"Faces detected! Response: '%@'", response);
 }
 
 

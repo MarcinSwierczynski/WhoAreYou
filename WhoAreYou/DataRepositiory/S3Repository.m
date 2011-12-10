@@ -10,7 +10,6 @@
 #import "ASIS3ObjectRequest.h"
 #import "ASIHTTPRequest.h"
 #import "SettingsManager.h"
-#import "BaseRepositoryDelegate.h"
 
 
 @implementation S3Repository {
@@ -35,7 +34,6 @@
 	[request setAccessPolicy:ASIS3AccessPolicyPublicRead];
 	[request setDelegate:self];
 	[request setDidFinishSelector:@selector(requestUploadFileFinished:)];
-	[request setDidFailSelector:@selector(requestS3RepositoryFailed:)];
 	[request startAsynchronous];
 }
 
@@ -44,11 +42,6 @@
 	if ([self.delegate respondsToSelector:@selector(fileUploadFinished:)]) {
 		[self.delegate fileUploadFinished:[request responseString]];
 	}
-}
-
-- (void)requestS3RepositoryFailed:(ASIHTTPRequest *)request {
-	// TODO show pretty message
-	NSLog(@"%@", [request error]);
 }
 
 - (void)dealloc {

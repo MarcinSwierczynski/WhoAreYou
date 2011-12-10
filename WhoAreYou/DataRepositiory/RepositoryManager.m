@@ -7,12 +7,15 @@
 //
 #import "RepositoryManager.h"
 #import "S3Repository.h"
+#import "FaceRepository.h"
 
 
 @implementation RepositoryManager {
 
 }
 @synthesize s3Repository;
+@synthesize faceRepository;
+
 
 static RepositoryManager *repository;
 
@@ -29,6 +32,7 @@ static RepositoryManager *repository;
 	self = [super init];
 	if (self) {
 		s3Repository = [[S3Repository alloc] init];
+		faceRepository = [[FaceRepository alloc] init];
 	}
 	return self;
 }
@@ -36,6 +40,7 @@ static RepositoryManager *repository;
 
 - (void)dealloc {
 	[s3Repository release];
+	[faceRepository release];
 	[super dealloc];
 }
 

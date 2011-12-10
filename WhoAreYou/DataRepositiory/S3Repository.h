@@ -24,6 +24,4 @@
 
 - (void)requestUploadFileFinished:(ASIHTTPRequest *)request;
 
--(void)requestS3RepositoryFailed:(ASIHTTPRequest *)request;
-
 @end

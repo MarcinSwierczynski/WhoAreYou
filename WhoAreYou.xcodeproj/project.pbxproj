@@ -48,6 +48,7 @@
 		D3EDE45C149388890044E582 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3EDE45B149388890044E582 /* settings.plist */; };
 		D3EDE45C149388890044E585 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E584 /* SettingsManager.m */; };
 		D3EDE45C149388890044E588 /* settings.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E587 /* settings.plist.example */; };
+		D3EDE45C149388890044E58A /* FaceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E589 /* FaceRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,9 @@
 		D3EDE45C149388890044E584 /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
 		D3EDE45C149388890044E586 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
 		D3EDE45C149388890044E587 /* settings.plist.example */ = {isa = PBXFileReference; lastKnownFileType = file.example; path = settings.plist.example; sourceTree = "<group>"; };
+		D3EDE45C149388890044E589 /* FaceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRepository.m; sourceTree = "<group>"; };
+		D3EDE45C149388890044E58B /* FaceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRepository.h; sourceTree = "<group>"; };
+		D3EDE45C149388890044E58C /* FaceRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRepositoryDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,9 @@
 		D32F846A1492B07000A3B8AF /* DataRepositiory */ = {
 			isa = PBXGroup;
 			children = (
+				D3EDE45C149388890044E58C /* FaceRepositoryDelegate.h */,
+				D3EDE45C149388890044E58B /* FaceRepository.h */,
+				D3EDE45C149388890044E589 /* FaceRepository.m */,
 				D32F846A1492B07000A3B8BD /* RepositoryManager.h */,
 				D32F846A1492B07000A3B8BB /* RepositoryManager.m */,
 				D32F846A1492B07000A3B8B7 /* S3RepositoryDelegate.h */,
@@ -491,6 +498,7 @@
 				D32F846A1492B07000A3B8B5 /* S3Repository.m in Sources */,
 				D32F846A1492B07000A3B8BC /* RepositoryManager.m in Sources */,
 				D3EDE45C149388890044E585 /* SettingsManager.m in Sources */,
+				D3EDE45C149388890044E58A /* FaceRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

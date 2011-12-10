@@ -30,5 +30,13 @@
 	return [[SettingsManager settingsAsDict] objectForKey:@"s3Bucket"];
 }
 
++ (NSString *)getFaceKey {
+	return [[SettingsManager settingsAsDict] objectForKey:@"faceKey"];
+}
+
++ (NSString *)getFaceSecret {
+	return [[SettingsManager settingsAsDict] objectForKey:@"faceSecret"];
+}
+
 
 @end

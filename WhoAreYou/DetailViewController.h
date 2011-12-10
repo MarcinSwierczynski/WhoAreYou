@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "S3RepositoryDelegate.h"
+#import "FaceRepositoryDelegate.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, S3RepositoryDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, S3RepositoryDelegate, FaceRepositoryDelegate>
 
 @property (strong, nonatomic) id detailItem;
 

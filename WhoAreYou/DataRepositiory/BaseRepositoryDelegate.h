@@ -12,6 +12,4 @@
 
 - (void)requestFailed:(NSError *)error;
 
-- (void)repositoryFailed:(NSString *)reason;
-
 @end

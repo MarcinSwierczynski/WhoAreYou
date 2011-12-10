@@ -18,4 +18,8 @@
 
 + (NSString *)getS3Bucket;
 
++ (NSString *)getFaceKey;
+
++ (NSString *)getFaceSecret;
+
 @end

@@ -6,6 +6,7 @@
 //  Copyright (c) 2011 marcin@swierczynski.net. All rights reserved.
 //
 #import "BaseRepository.h"
+#import "BaseRepositoryDelegate.h"
 #import "ASIFormDataRequest.h"
 
 
@@ -17,21 +18,29 @@
 
 - (void)dealloc {
 	delegate = nil;
-    [super dealloc];
+	[super dealloc];
 }
 
 - (ASIHTTPRequest *)createRequest:(NSURL *)url {
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setDelegate:self];
-    [request startAsynchronous];
-    return request;
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+	[request setDelegate:self];
+	[request startAsynchronous];
+	return request;
 }
 
 - (ASIFormDataRequest *)createRequest:(NSURL *)url usingMethod:(NSString *)method {
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 	[request setRequestMethod:method];
 	[request setDelegate:self];
 	return request;
 }
+
+- (void)requestFailed:(ASIHTTPRequest *)request {
+	NSLog(@"didFailWithError:%@", [request error]);
+	if ([delegate respondsToSelector:@selector(requestFailed:)]) {
+		[delegate requestFailed:[request error]];
+	}
+}
+
 
 @end
