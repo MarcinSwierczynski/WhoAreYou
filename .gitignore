@@ -16,3 +16,6 @@ profile
 
 #AppCode
 .idea/
+
+#Application specific
+settings.plist
