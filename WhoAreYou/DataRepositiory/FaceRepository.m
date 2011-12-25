@@ -30,7 +30,7 @@
 
 - (void)recognizeFacesIn:(NSString *)photoUrl {
 	NSString *url = [NSString stringWithFormat:@"http://api.face.com/faces/detect.json?api_key=%@&api_secret=%@&urls=%@&attributes=all&",
-					self.apiKey, self.apiSecret, photoUrl];
+											   self.apiKey, self.apiSecret, photoUrl];
 	ASIHTTPRequest *request = [super createRequest:[NSURL URLWithString:url]];
 	[request setDidFinishSelector:@selector(faceRecognitionRequestFinished:)];
 }

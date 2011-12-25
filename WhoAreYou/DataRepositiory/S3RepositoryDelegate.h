@@ -10,6 +10,6 @@
 @protocol S3RepositoryDelegate <BaseRepositoryDelegate>
 
 @optional
--(void)fileUploadFinished:(NSString *)response;
+- (void)fileUploadFinished:(NSString *)response;
 
 @end

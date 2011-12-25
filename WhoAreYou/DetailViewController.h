@@ -12,8 +12,8 @@
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, S3RepositoryDelegate, FaceRepositoryDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property(nonatomic, retain) IBOutlet UIImageView *imageView;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (void)showImage:(NSString *)imagePath;
 
 @end

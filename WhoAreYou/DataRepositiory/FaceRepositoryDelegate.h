@@ -10,6 +10,6 @@
 @protocol FaceRepositoryDelegate <BaseRepositoryDelegate>
 
 @optional
--(void)faceDetected:(NSString *)response;
+- (void)faceDetected:(NSString *)response;
 
 @end
