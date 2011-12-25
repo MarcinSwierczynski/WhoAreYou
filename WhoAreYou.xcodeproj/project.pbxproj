@@ -50,6 +50,8 @@
 		D3EDE45C149388890044E588 /* settings.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E587 /* settings.plist.example */; };
 		D3EDE45C149388890044E58A /* FaceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E589 /* FaceRepository.m */; };
 		D3EDE45C149388890044E590 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E58F /* JSONKit.m */; };
+		D3EDE45C149388890044E593 /* FaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E592 /* FaceImageView.m */; };
+		D3EDE45C149388890044E596 /* RecognitionMetadataView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E595 /* RecognitionMetadataView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,10 @@
 		D3EDE45C149388890044E58C /* FaceRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRepositoryDelegate.h; sourceTree = "<group>"; };
 		D3EDE45C149388890044E58E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		D3EDE45C149388890044E58F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D3EDE45C149388890044E592 /* FaceImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceImageView.m; sourceTree = "<group>"; };
+		D3EDE45C149388890044E594 /* FaceImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceImageView.h; sourceTree = "<group>"; };
+		D3EDE45C149388890044E595 /* RecognitionMetadataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionMetadataView.m; sourceTree = "<group>"; };
+		D3EDE45C149388890044E597 /* RecognitionMetadataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionMetadataView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,7 @@
 				D32F83D61492AC0300A3B8AE /* Supporting Files */,
 				D32F846A1492B07000A3B8AF /* DataRepositiory */,
 				D3EDE45C149388890044E583 /* Utils */,
+				D3EDE45C149388890044E591 /* FaceRecognized */,
 			);
 			path = WhoAreYou;
 			sourceTree = "<group>";
@@ -377,6 +384,17 @@
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
+		D3EDE45C149388890044E591 /* FaceRecognized */ = {
+			isa = PBXGroup;
+			children = (
+				D3EDE45C149388890044E597 /* RecognitionMetadataView.h */,
+				D3EDE45C149388890044E595 /* RecognitionMetadataView.m */,
+				D3EDE45C149388890044E594 /* FaceImageView.h */,
+				D3EDE45C149388890044E592 /* FaceImageView.m */,
+			);
+			path = FaceRecognized;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -513,6 +531,8 @@
 				D3EDE45C149388890044E585 /* SettingsManager.m in Sources */,
 				D3EDE45C149388890044E58A /* FaceRepository.m in Sources */,
 				D3EDE45C149388890044E590 /* JSONKit.m in Sources */,
+				D3EDE45C149388890044E593 /* FaceImageView.m in Sources */,
+				D3EDE45C149388890044E596 /* RecognitionMetadataView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

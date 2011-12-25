@@ -10,9 +10,11 @@
 #import "S3RepositoryDelegate.h"
 #import "FaceRepositoryDelegate.h"
 
+@class FaceImageView;
+
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, S3RepositoryDelegate, FaceRepositoryDelegate>
 
-@property(nonatomic, retain) IBOutlet UIImageView *imageView;
+@property(nonatomic, retain) IBOutlet FaceImageView *imageView;
 
 - (void)showImage:(NSString *)imagePath;
 

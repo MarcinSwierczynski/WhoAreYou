@@ -11,6 +11,7 @@
 #import "S3Repository.h"
 #import "FaceRepository.h"
 #import "JSONKit.h"
+#import "FaceImageView.h"
 
 @interface DetailViewController ()
 @property(strong, nonatomic) UIPopoverController *masterPopoverController;
