@@ -10,6 +10,7 @@
 #import "RepositoryManager.h"
 #import "S3Repository.h"
 #import "FaceRepository.h"
+#import "JSONKit.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -91,7 +92,7 @@
 }
 
 - (void)faceDetected:(NSString *)response {
-	NSLog(@"Faces detected! Response: '%@'", response);
+	NSLog(@"Faces detected! Response: '%@'", [response objectFromJSONString]);
 }
 
 

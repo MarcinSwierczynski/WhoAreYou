@@ -49,6 +49,7 @@
 		D3EDE45C149388890044E585 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E584 /* SettingsManager.m */; };
 		D3EDE45C149388890044E588 /* settings.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E587 /* settings.plist.example */; };
 		D3EDE45C149388890044E58A /* FaceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E589 /* FaceRepository.m */; };
+		D3EDE45C149388890044E590 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDE45C149388890044E58F /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		D3EDE45C149388890044E589 /* FaceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRepository.m; sourceTree = "<group>"; };
 		D3EDE45C149388890044E58B /* FaceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRepository.h; sourceTree = "<group>"; };
 		D3EDE45C149388890044E58C /* FaceRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRepositoryDelegate.h; sourceTree = "<group>"; };
+		D3EDE45C149388890044E58E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D3EDE45C149388890044E58F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				D32F84351492B07000A3B8AE /* ASIHTTP */,
+				D3EDE45C149388890044E58D /* JSONKit */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -362,6 +366,15 @@
 				D3EDE45C149388890044E584 /* SettingsManager.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D3EDE45C149388890044E58D /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				D3EDE45C149388890044E58F /* JSONKit.m */,
+				D3EDE45C149388890044E58E /* JSONKit.h */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +512,7 @@
 				D32F846A1492B07000A3B8BC /* RepositoryManager.m in Sources */,
 				D3EDE45C149388890044E585 /* SettingsManager.m in Sources */,
 				D3EDE45C149388890044E58A /* FaceRepository.m in Sources */,
+				D3EDE45C149388890044E590 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
